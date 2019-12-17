@@ -26,7 +26,7 @@ export default {
                     var yesterday_price = parseFloat(arr[2]);
                     var curr_price = parseFloat(arr[3]);
                     var percentage = (curr_price - yesterday_price) / yesterday_price * 100
-                    var text = curr_price.toFixed(2) + "," + percentage.toFixed(2) + "%";
+                    var text = curr_price + "," + percentage.toFixed(2) + "%";
                     textAll = textAll + text + "||";
                 }
                 textAll = textAll.substring(0, textAll.length - 2)
